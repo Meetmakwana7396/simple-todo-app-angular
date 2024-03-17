@@ -1,13 +1,13 @@
 <div
-  class="w-full rounded-lg bg-white border-[3px] p-6 flex justify-between items-center"
+  class="w-full rounded-lg bg-white flex p-6 flex-col gap-4 group hover:ring-4 hover:ring-blue-500 ring-2 ring-black"
 >
   <div>
     <h2 class="text-black font-semibold text-lg">{{ todo.title }}</h2>
     <p class="text-neutral-500">{{ todo.description }}</p>
   </div>
-  <div>
+  <div class="group-hover:opacity-100 opacity-0">
     <button
-      class="bg-red-500 text-white p-2 px-4 rounded font-medium hover:opacity-70"
+      class="bg-red-500 text-white p-2 text-sm rounded font-medium hover:opacity-70"
       (click)="onClick(todo)"
     >
       Delete

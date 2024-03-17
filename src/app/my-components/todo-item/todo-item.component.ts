@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Todo } from '../../Todo';
+import { LucideAngularModule } from 'lucide-angular';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'todo-item',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, LucideAngularModule, MatIconModule],
   templateUrl: './todo-item.component.html',
   styleUrl: './todo-item.component.css',
 })

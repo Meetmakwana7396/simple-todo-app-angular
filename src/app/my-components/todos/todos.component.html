@@ -1,5 +1,19 @@
-<div class="my-10 space-y-4">
+<div class="grid grid-cols-4 my-10 gap-4">
   <div *ngFor="let todo of todos">
     <todo-item [todo]="todo" (todoDelete)="deleteTodo($event)"></todo-item>
+  </div>
+
+  <div
+    class="h-full relative rounded-lg border-2 group bg-white flex justify-center items-center"
+    role="button"
+    mat-raised-button (click)="openDialog()"
+  >
+    <div
+      class="absolute rounded-lg inset-0 w-full h-full bg-black/10 group-hover:block hidden"
+    ></div>
+    <div class="text-center">
+      <h4 class="font-semibold">Add new todo</h4>
+      <p class="text-neutral-500">Lorem ipsum dolor sit amet.</p>
+    </div>
   </div>
 </div>

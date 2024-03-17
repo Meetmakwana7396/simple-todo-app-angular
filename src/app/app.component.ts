@@ -12,9 +12,4 @@ import { TodoItemComponent } from './my-components/todo-item/todo-item.component
 })
 export class AppComponent {
   title = 'Welcome to my first angular app!';
-  constructor() {
-    setTimeout(() => {
-      this.title = "Welcome to meet's first angular app!";
-    }, 2000);
-  }
 }
