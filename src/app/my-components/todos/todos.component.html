@@ -1,0 +1,5 @@
+<div class="my-10 space-y-4">
+  <div *ngFor="let todo of todos">
+    <todo-item [todo]="todo" (todoDelete)="deleteTodo($event)"></todo-item>
+  </div>
+</div>
